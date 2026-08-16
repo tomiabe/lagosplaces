@@ -398,6 +398,10 @@
     if (metaEl) {
       metaEl.hidden = !hasActiveFilters();
     }
+    var titleEl = $('#explore-title');
+    if (titleEl && !state.collection && titleEl.textContent !== 'Find your kind of place') {
+      titleEl.textContent = 'Find your kind of place';
+    }
   }
 
   function chipActiveStates() {
@@ -458,7 +462,7 @@
 
     $('#main').innerHTML =
       '<div class="container explore__head">' +
-        '<h1 class="explore__title">' + esc(head) + '</h1>' +
+        '<h1 class="explore__title" id="explore-title">' + esc(head) + '</h1>' +
         '<p class="explore__count" id="results-count"></p>' +
       '</div>' +
 
@@ -481,7 +485,7 @@
           '<div class="chips-row filters__occasions" aria-label="Occasions">' + occasionChips + '</div>' +
           '<div class="filters__meta" id="filters-meta">' +
             '<span class="filters__summary" id="filters-summary"></span>' +
-            '<button class="btn btn--ghost" id="clear-filters" hidden>Clear</button>' +
+            '<button class="btn btn--ghost" id="clear-filters" data-clear hidden>Clear</button>' +
           '</div>' +
         '</div>' +
       '</div>' +
