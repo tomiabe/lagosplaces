@@ -394,6 +394,10 @@
     if (clearBtn) {
       clearBtn.hidden = !hasActiveFilters();
     }
+    var metaEl = $('#filters-meta');
+    if (metaEl) {
+      metaEl.hidden = !hasActiveFilters();
+    }
   }
 
   function chipActiveStates() {
@@ -472,13 +476,13 @@
               '<div class="field"><select id="filter-vibe" aria-label="Vibe">' + selectOptions(data.config.vibes, state.vibe, 'Any vibe') + '</select><span class="field__icon">' + icon('arrow-down-01') + '</span></div>' +
               '<div class="field"><select id="filter-sort" aria-label="Sort">' + selectOptions([{ id: 'score', label: 'Score' }, { id: 'price-asc', label: 'Price, low to high' }, { id: 'price-desc', label: 'Price, high to low' }], state.sort, 'Score') + '</select><span class="field__icon">' + icon('arrow-down-01') + '</span></div>' +
             '</div>' +
-            '<div class="filters__actions">' +
-              '<button class="btn btn--outline mobile-filters-btn" data-open-sheet>' + icon('filter-horizontal') + ' Filters</button>' +
-              '<span class="filters__summary" id="filters-summary"></span>' +
-              '<button class="btn btn--ghost" id="clear-filters" hidden>Clear</button>' +
-            '</div>' +
+            '<button class="btn btn--outline mobile-filters-btn" data-open-sheet>' + icon('filter-horizontal') + ' Filters</button>' +
           '</div>' +
           '<div class="chips-row filters__occasions" aria-label="Occasions">' + occasionChips + '</div>' +
+          '<div class="filters__meta" id="filters-meta">' +
+            '<span class="filters__summary" id="filters-summary"></span>' +
+            '<button class="btn btn--ghost" id="clear-filters" hidden>Clear</button>' +
+          '</div>' +
         '</div>' +
       '</div>' +
 
