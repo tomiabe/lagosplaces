@@ -370,6 +370,18 @@ main:focus {
   font-size: 16px;
 }
 
+.field select:focus {
+  border-color: var(--ink);
+}
+
+.field select:focus-visible {
+  outline: none;
+}
+
+.field:focus-within .field__icon {
+  color: var(--ink);
+}
+
 .search {
   display: flex;
   gap: 10px;
@@ -411,11 +423,6 @@ main:focus {
 .search__box input:focus {
   border-color: var(--ink);
   outline: none;
-}
-
-.search__box input:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 2px;
 }
 
 .hero {
