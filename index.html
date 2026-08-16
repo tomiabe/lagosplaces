@@ -62,6 +62,18 @@
 
   <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
   <div class="sheet" id="filter-sheet" role="dialog" aria-modal="true" aria-label="Filters" hidden></div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photos" hidden>
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close photos"><i class="hgi-stroke hgi-cancel-01" aria-hidden="true"></i></button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous photo"><i class="hgi-stroke hgi-arrow-left-01" aria-hidden="true"></i></button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next photo"><i class="hgi-stroke hgi-arrow-right-01" aria-hidden="true"></i></button>
+    <div class="lightbox__stage" id="lightbox-stage">
+      <img class="lightbox__img" id="lightbox-img" alt="" draggable="false" />
+    </div>
+    <p class="lightbox__counter" id="lightbox-counter"></p>
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+  </div>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="js/app.js"></script>
