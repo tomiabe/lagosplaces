@@ -166,12 +166,8 @@ main:focus {
 .brand__mark {
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  background: var(--ink);
-  color: var(--yellow);
-  display: grid;
-  place-items: center;
-  font-size: 18px;
+  display: block;
+  flex: none;
 }
 
 .brand__name {
@@ -439,6 +435,7 @@ main:focus {
 }
 
 .hero .search__box input:focus {
+  border-color: transparent;
   outline: 3px solid var(--yellow);
   outline-offset: 2px;
 }
