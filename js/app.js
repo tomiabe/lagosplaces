@@ -415,7 +415,7 @@
     var areaEl = $('#filter-area');
     if (areaEl) areaEl.value = state.area;
     var budgetEl = $('#filter-budget');
-    if (budgetEl) budgetEl.value = String(state.budget);
+    if (budgetEl) budgetEl.value = state.budget ? String(state.budget) : '';
     var vibeEl = $('#filter-vibe');
     if (vibeEl) vibeEl.value = state.vibe;
     var sortEl = $('#filter-sort');
@@ -467,10 +467,10 @@
               '</div>' +
             '</div>' +
             '<div class="filters__selects">' +
-              '<div class="field"><select id="filter-area" aria-label="Area">' + selectOptions(data.config.areas, state.area, 'Any area') + '</select>' + icon('arrow-down-01') + '</div>' +
-              '<div class="field"><select id="filter-budget" aria-label="Budget">' + selectOptions(data.config.budgets.map(function (b) { return { id: b.level, label: b.label }; }), state.budget, 'Any budget') + '</select>' + icon('arrow-down-01') + '</div>' +
-              '<div class="field"><select id="filter-vibe" aria-label="Vibe">' + selectOptions(data.config.vibes, state.vibe, 'Any vibe') + '</select>' + icon('arrow-down-01') + '</div>' +
-              '<div class="field"><select id="filter-sort" aria-label="Sort">' + selectOptions([{ id: 'score', label: 'Score' }, { id: 'price-asc', label: 'Price, low to high' }, { id: 'price-desc', label: 'Price, high to low' }], state.sort, 'Score') + '</select>' + icon('arrow-down-01') + '</div>' +
+              '<div class="field"><select id="filter-area" aria-label="Area">' + selectOptions(data.config.areas, state.area, 'Any area') + '</select><span class="field__icon">' + icon('arrow-down-01') + '</span></div>' +
+              '<div class="field"><select id="filter-budget" aria-label="Budget">' + selectOptions(data.config.budgets.map(function (b) { return { id: b.level, label: b.label }; }), state.budget, 'Any budget') + '</select><span class="field__icon">' + icon('arrow-down-01') + '</span></div>' +
+              '<div class="field"><select id="filter-vibe" aria-label="Vibe">' + selectOptions(data.config.vibes, state.vibe, 'Any vibe') + '</select><span class="field__icon">' + icon('arrow-down-01') + '</span></div>' +
+              '<div class="field"><select id="filter-sort" aria-label="Sort">' + selectOptions([{ id: 'score', label: 'Score' }, { id: 'price-asc', label: 'Price, low to high' }, { id: 'price-desc', label: 'Price, high to low' }], state.sort, 'Score') + '</select><span class="field__icon">' + icon('arrow-down-01') + '</span></div>' +
             '</div>' +
             '<div class="filters__actions">' +
               '<button class="btn btn--outline mobile-filters-btn" data-open-sheet>' + icon('filter-horizontal') + ' Filters</button>' +
@@ -500,7 +500,7 @@
       '<p class="sheet__title">Filters</p>' +
       '<div class="sheet__group">' +
         '<p class="sheet__label">Area</p>' +
-        '<div class="field"><select id="sheet-area" aria-label="Area">' + selectOptions(data.config.areas, state.area, 'Any area') + '</select>' + icon('arrow-down-01') + '</div>' +
+        '<div class="field"><select id="sheet-area" aria-label="Area">' + selectOptions(data.config.areas, state.area, 'Any area') + '</select><span class="field__icon">' + icon('arrow-down-01') + '</span></div>' +
       '</div>' +
       '<div class="sheet__group">' +
         '<p class="sheet__label">Budget</p>' +
@@ -512,7 +512,7 @@
       '</div>' +
       '<div class="sheet__group">' +
         '<p class="sheet__label">Sort</p>' +
-        '<div class="field"><select id="sheet-sort" aria-label="Sort">' + selectOptions([{ id: 'score', label: 'Score' }, { id: 'price-asc', label: 'Price, low to high' }, { id: 'price-desc', label: 'Price, high to low' }], state.sort, 'Score') + '</select>' + icon('arrow-down-01') + '</div>' +
+        '<div class="field"><select id="sheet-sort" aria-label="Sort">' + selectOptions([{ id: 'score', label: 'Score' }, { id: 'price-asc', label: 'Price, low to high' }, { id: 'price-desc', label: 'Price, high to low' }], state.sort, 'Score') + '</select><span class="field__icon">' + icon('arrow-down-01') + '</span></div>' +
       '</div>' +
       '<div class="sheet__footer">' +
         '<button class="btn btn--outline" data-sheet-clear>Clear</button>' +
