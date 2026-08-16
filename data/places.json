@@ -3,44 +3,156 @@
     "note": "Seed dataset for the first build. Every detail is a first pass and must be rechecked with each venue before launch. Images are placeholders, swap them for the real Instagram photos."
   },
   "config": {
-    "areas": ["Victoria Island", "Ikoyi", "Lekki Phase 1", "Lekki-Epe", "Ikeja", "Yaba", "Ebute Metta", "Lagos Island"],
+    "areas": [
+      "Victoria Island",
+      "Ikoyi",
+      "Lekki Phase 1",
+      "Lekki-Epe",
+      "Ikeja",
+      "Yaba",
+      "Ebute Metta",
+      "Lagos Island"
+    ],
     "budgets": [
-      { "level": 1, "label": "Under ₦20k", "price": "₦" },
-      { "level": 2, "label": "₦20k-₦40k", "price": "₦₦" },
-      { "level": 3, "label": "₦40k-₦80k", "price": "₦₦₦" },
-      { "level": 4, "label": "₦80k and up", "price": "₦₦₦₦" }
+      {
+        "level": 1,
+        "label": "Under ₦20k",
+        "price": "₦"
+      },
+      {
+        "level": 2,
+        "label": "₦20k-₦40k",
+        "price": "₦₦"
+      },
+      {
+        "level": 3,
+        "label": "₦40k-₦80k",
+        "price": "₦₦₦"
+      },
+      {
+        "level": 4,
+        "label": "₦80k and up",
+        "price": "₦₦₦₦"
+      }
     ],
     "occasions": [
-      { "id": "date-night", "label": "Date night" },
-      { "id": "birthday", "label": "Birthday" },
-      { "id": "brunch", "label": "Brunch" },
-      { "id": "work", "label": "Work" },
-      { "id": "chill", "label": "Chill" },
-      { "id": "party", "label": "Party" },
-      { "id": "family", "label": "Family" },
-      { "id": "tourist", "label": "Tourist" },
-      { "id": "beach-day", "label": "Beach day" },
-      { "id": "night-out", "label": "Night out" }
+      {
+        "id": "date-night",
+        "label": "Date night"
+      },
+      {
+        "id": "birthday",
+        "label": "Birthday"
+      },
+      {
+        "id": "brunch",
+        "label": "Brunch"
+      },
+      {
+        "id": "work",
+        "label": "Work"
+      },
+      {
+        "id": "chill",
+        "label": "Chill"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "family",
+        "label": "Family"
+      },
+      {
+        "id": "tourist",
+        "label": "Tourist"
+      },
+      {
+        "id": "beach-day",
+        "label": "Beach day"
+      },
+      {
+        "id": "night-out",
+        "label": "Night out"
+      }
     ],
     "vibes": [
-      { "id": "quiet", "label": "Quiet" },
-      { "id": "romantic", "label": "Romantic" },
-      { "id": "lively", "label": "Lively" },
-      { "id": "luxury", "label": "Luxury" },
-      { "id": "casual", "label": "Casual" },
-      { "id": "outdoors", "label": "Outdoors" },
-      { "id": "instagrammable", "label": "Instagrammable" }
+      {
+        "id": "quiet",
+        "label": "Quiet"
+      },
+      {
+        "id": "romantic",
+        "label": "Romantic"
+      },
+      {
+        "id": "lively",
+        "label": "Lively"
+      },
+      {
+        "id": "luxury",
+        "label": "Luxury"
+      },
+      {
+        "id": "casual",
+        "label": "Casual"
+      },
+      {
+        "id": "outdoors",
+        "label": "Outdoors"
+      },
+      {
+        "id": "instagrammable",
+        "label": "Instagrammable"
+      }
     ],
     "categories": [
-      { "id": "bistro", "label": "Bistro", "icon": "restaurant-table" },
-      { "id": "restaurant", "label": "Restaurant", "icon": "restaurant-01" },
-      { "id": "coffee", "label": "Coffee", "icon": "coffee-01" },
-      { "id": "bar", "label": "Bar", "icon": "drink" },
-      { "id": "culture", "label": "Culture", "icon": "ticket-01" },
-      { "id": "heritage", "label": "Heritage", "icon": "tree-01" },
-      { "id": "hotel", "label": "Hotel", "icon": "hotel-01" },
-      { "id": "beach", "label": "Beach", "icon": "beach" },
-      { "id": "live-music", "label": "Live music", "icon": "mic-01" }
+      {
+        "id": "bistro",
+        "label": "Bistro",
+        "icon": "restaurant-table"
+      },
+      {
+        "id": "restaurant",
+        "label": "Restaurant",
+        "icon": "restaurant-01"
+      },
+      {
+        "id": "coffee",
+        "label": "Coffee",
+        "icon": "coffee-01"
+      },
+      {
+        "id": "bar",
+        "label": "Bar",
+        "icon": "drink"
+      },
+      {
+        "id": "culture",
+        "label": "Culture",
+        "icon": "ticket-01"
+      },
+      {
+        "id": "heritage",
+        "label": "Heritage",
+        "icon": "tree-01"
+      },
+      {
+        "id": "hotel",
+        "label": "Hotel",
+        "icon": "hotel-01"
+      },
+      {
+        "id": "beach",
+        "label": "Beach",
+        "icon": "beach"
+      },
+      {
+        "id": "live-music",
+        "label": "Live music",
+        "icon": "mic-01"
+      }
     ]
   },
   "collections": [
@@ -49,56 +161,95 @@
       "name": "First dates in Lagos",
       "blurb": "Quiet corners, good lighting and easy conversation. No awkward exits.",
       "icon": "heart-check",
-      "places": ["circa-lagos", "nok-by-alara", "bogobiri-house", "the-wheatbaker"]
+      "places": [
+        "circa-lagos",
+        "nok-by-alara",
+        "bogobiri-house",
+        "the-wheatbaker"
+      ]
     },
     {
       "id": "under-20k",
       "name": "Under ₦20k",
       "blurb": "Good food and good vibes without the bill anxiety.",
       "icon": "money-01",
-      "places": ["cafe-neo", "co-cafe", "terra-kulture", "freedom-park", "jaekel-house"]
+      "places": [
+        "cafe-neo",
+        "co-cafe",
+        "terra-kulture",
+        "freedom-park",
+        "jaekel-house"
+      ]
     },
     {
       "id": "open-late",
       "name": "Open past midnight",
       "blurb": "For when the night is still young.",
       "icon": "moon-01",
-      "places": ["the-new-afrika-shrine", "bogobiri-house", "rsvp-restaurant", "the-house-lagos"]
+      "places": [
+        "the-new-afrika-shrine",
+        "bogobiri-house",
+        "rsvp-restaurant",
+        "the-house-lagos"
+      ]
     },
     {
       "id": "mainland-gems",
       "name": "Mainland gems",
       "blurb": "Places worth the bridge crossing.",
       "icon": "navigation-01",
-      "places": ["jaekel-house", "the-house-lagos", "the-new-afrika-shrine"]
+      "places": [
+        "jaekel-house",
+        "the-house-lagos",
+        "the-new-afrika-shrine"
+      ]
     },
     {
       "id": "quiet-to-talk",
       "name": "Quiet enough to talk",
       "blurb": "Dates and deep conversations welcome.",
       "icon": "volume-high",
-      "places": ["the-wheatbaker", "nok-by-alara", "jaekel-house", "circa-lagos"]
+      "places": [
+        "the-wheatbaker",
+        "nok-by-alara",
+        "jaekel-house",
+        "circa-lagos"
+      ]
     },
     {
       "id": "laptop-friendly",
       "name": "Laptop friendly",
       "blurb": "Plug in, log on and get something done.",
       "icon": "laptop",
-      "places": ["co-cafe", "cafe-neo", "art-cafe-lagos"]
+      "places": [
+        "co-cafe",
+        "cafe-neo",
+        "art-cafe-lagos"
+      ]
     },
     {
       "id": "good-pictures",
       "name": "Good pictures",
       "blurb": "Spaces that photograph themselves.",
       "icon": "camera-01",
-      "places": ["art-cafe-lagos", "nok-by-alara", "circa-lagos", "la-campagne-tropicana"]
+      "places": [
+        "art-cafe-lagos",
+        "nok-by-alara",
+        "circa-lagos",
+        "la-campagne-tropicana"
+      ]
     },
     {
       "id": "birthday-approved",
       "name": "Birthday approved",
       "blurb": "The room fills up, the cake comes out, the night works.",
       "icon": "gift",
-      "places": ["rsvp-restaurant", "the-house-lagos", "la-campagne-tropicana", "bogobiri-house"]
+      "places": [
+        "rsvp-restaurant",
+        "the-house-lagos",
+        "la-campagne-tropicana",
+        "bogobiri-house"
+      ]
     }
   ],
   "places": [
@@ -109,15 +260,26 @@
       "area": "Lekki Phase 1",
       "price": 3,
       "score": 8.7,
-      "vibe": ["quiet", "romantic", "instagrammable"],
-      "occasions": ["date-night", "brunch", "birthday"],
-      "tags": ["bistro", "seasonal", "courtyard", "book ahead"],
+      "vibe": [
+        "quiet",
+        "romantic",
+        "instagrammable"
+      ],
+      "occasions": [
+        "date-night",
+        "brunch",
+        "birthday"
+      ],
+      "tags": [
+        "bistro",
+        "seasonal",
+        "courtyard",
+        "book ahead"
+      ],
       "featured": true,
-      "image": "https://picsum.photos/seed/circa-lagos/1200/900",
+      "image": "images/places/circa-lagos.jpg",
       "gallery": [
-        "https://picsum.photos/seed/circa-lagos-1/1200/900",
-        "https://picsum.photos/seed/circa-lagos-2/1200/900",
-        "https://picsum.photos/seed/circa-lagos-3/1200/900"
+        "images/places/circa-lagos.jpg"
       ],
       "description": "A calm bistro set back from the Lekki main road, with a plant-lined courtyard and a short menu that changes with the seasons. The lighting does the work for you, and the room fills with people who booked ahead.",
       "bestFor": "Brunch with friends, low-key dates, weekday dinners.",
@@ -151,14 +313,27 @@
       "area": "Lekki Phase 1",
       "price": 2,
       "score": 8.2,
-      "vibe": ["lively", "casual"],
-      "occasions": ["birthday", "party", "night-out", "dinner"],
-      "tags": ["Nigerian classics", "big groups", "loud room"],
+      "vibe": [
+        "lively",
+        "casual"
+      ],
+      "occasions": [
+        "birthday",
+        "party",
+        "night-out",
+        "dinner"
+      ],
+      "tags": [
+        "Nigerian classics",
+        "big groups",
+        "loud room"
+      ],
       "featured": false,
-      "image": "https://picsum.photos/seed/rsvp-restaurant/1200/900",
+      "image": "images/places/rsvp-restaurant.jpg",
       "gallery": [
-        "https://picsum.photos/seed/rsvp-restaurant-1/1200/900",
-        "https://picsum.photos/seed/rsvp-restaurant-2/1200/900"
+        "images/places/rsvp-restaurant.jpg",
+        "images/places/rsvp-interior-1.jpg",
+        "images/places/rsvp-interior-2.jpg"
       ],
       "description": "A long-standing Lekki spot with a buzzy dining room and a menu that runs Nigerian classics through to continental dishes. Portions are generous and the bar does the job. The energy builds as the evening goes on.",
       "bestFor": "Dinner with a group, birthday dinners, Friday nights out.",
@@ -191,10 +366,21 @@
       "category": "coffee",
       "area": "Victoria Island",
       "price": 1,
-      "score": 8.0,
-      "vibe": ["casual", "instagrammable"],
-      "occasions": ["brunch", "work", "chill"],
-      "tags": ["coffee", "white walls", "good light"],
+      "score": 8,
+      "vibe": [
+        "casual",
+        "instagrammable"
+      ],
+      "occasions": [
+        "brunch",
+        "work",
+        "chill"
+      ],
+      "tags": [
+        "coffee",
+        "white walls",
+        "good light"
+      ],
       "featured": false,
       "image": "https://picsum.photos/seed/art-cafe-lagos/1200/900",
       "gallery": [
@@ -231,14 +417,25 @@
       "area": "Ikeja",
       "price": 2,
       "score": 8.4,
-      "vibe": ["lively", "casual"],
-      "occasions": ["birthday", "party", "night-out", "dinner"],
-      "tags": ["Allen Avenue", "Nigerian food", "outdoor section"],
+      "vibe": [
+        "lively",
+        "casual"
+      ],
+      "occasions": [
+        "birthday",
+        "party",
+        "night-out",
+        "dinner"
+      ],
+      "tags": [
+        "Allen Avenue",
+        "Nigerian food",
+        "outdoor section"
+      ],
       "featured": false,
-      "image": "https://picsum.photos/seed/the-house-lagos/1200/900",
+      "image": "images/places/the-house-lagos.jpg",
       "gallery": [
-        "https://picsum.photos/seed/the-house-lagos-1/1200/900",
-        "https://picsum.photos/seed/the-house-lagos-2/1200/900"
+        "images/places/the-house-lagos.jpg"
       ],
       "description": "A multi-room restaurant and bar on the Ikeja GRA end of Allen Avenue. Eat proper Nigerian food indoors, then move outside when the music picks up. It runs late and it handles big tables well.",
       "bestFor": "Dinner and drinks, birthday parties, groups.",
@@ -271,15 +468,26 @@
       "area": "Victoria Island",
       "price": 3,
       "score": 8.9,
-      "vibe": ["quiet", "romantic", "luxury", "instagrammable"],
-      "occasions": ["date-night", "brunch", "tourist"],
-      "tags": ["art gallery", "seasonal menu", "courtyard"],
+      "vibe": [
+        "quiet",
+        "romantic",
+        "luxury",
+        "instagrammable"
+      ],
+      "occasions": [
+        "date-night",
+        "brunch",
+        "tourist"
+      ],
+      "tags": [
+        "art gallery",
+        "seasonal menu",
+        "courtyard"
+      ],
       "featured": true,
-      "image": "https://picsum.photos/seed/nok-by-alara/1200/900",
+      "image": "images/places/nok-by-alara.jpg",
       "gallery": [
-        "https://picsum.photos/seed/nok-by-alara-1/1200/900",
-        "https://picsum.photos/seed/nok-by-alara-2/1200/900",
-        "https://picsum.photos/seed/nok-by-alara-3/1200/900"
+        "images/places/nok-by-alara.jpg"
       ],
       "description": "A contemporary African gallery with a courtyard restaurant attached. You get a real taste of the art scene before you even order. The menu is seasonal, West African-led and worth slowing down for.",
       "bestFor": "Date nights with culture, brunch with a slow pace.",
@@ -311,14 +519,24 @@
       "area": "Victoria Island",
       "price": 1,
       "score": 8.3,
-      "vibe": ["casual", "lively"],
-      "occasions": ["family", "tourist", "date-night"],
-      "tags": ["theatre", "art", "Nigerian food"],
+      "vibe": [
+        "casual",
+        "lively"
+      ],
+      "occasions": [
+        "family",
+        "tourist",
+        "date-night"
+      ],
+      "tags": [
+        "theatre",
+        "art",
+        "Nigerian food"
+      ],
       "featured": false,
-      "image": "https://picsum.photos/seed/terra-kulture/1200/900",
+      "image": "images/places/terra-kulture.jpg",
       "gallery": [
-        "https://picsum.photos/seed/terra-kulture-1/1200/900",
-        "https://picsum.photos/seed/terra-kulture-2/1200/900"
+        "images/places/terra-kulture.jpg"
       ],
       "description": "Half cultural centre, half restaurant. Plays, art, books and Nigerian food under one roof, and one of the few places where you can watch a show and eat well the same evening.",
       "bestFor": "Culture nights, family outings, tourist days.",
@@ -351,9 +569,22 @@
       "area": "Ikoyi",
       "price": 2,
       "score": 8.6,
-      "vibe": ["lively", "romantic", "casual"],
-      "occasions": ["date-night", "night-out", "birthday", "tourist"],
-      "tags": ["live music", "boutique hotel", "courtyard"],
+      "vibe": [
+        "lively",
+        "romantic",
+        "casual"
+      ],
+      "occasions": [
+        "date-night",
+        "night-out",
+        "birthday",
+        "tourist"
+      ],
+      "tags": [
+        "live music",
+        "boutique hotel",
+        "courtyard"
+      ],
       "featured": true,
       "image": "https://picsum.photos/seed/bogobiri-house/1200/900",
       "gallery": [
@@ -389,14 +620,25 @@
       "area": "Lagos Island",
       "price": 1,
       "score": 8.1,
-      "vibe": ["outdoors", "casual"],
-      "occasions": ["family", "tourist", "party", "chill"],
-      "tags": ["public park", "events", "food stalls"],
+      "vibe": [
+        "outdoors",
+        "casual"
+      ],
+      "occasions": [
+        "family",
+        "tourist",
+        "party",
+        "chill"
+      ],
+      "tags": [
+        "public park",
+        "events",
+        "food stalls"
+      ],
       "featured": false,
-      "image": "https://picsum.photos/seed/freedom-park/1200/900",
+      "image": "images/places/freedom-park.jpg",
       "gallery": [
-        "https://picsum.photos/seed/freedom-park-1/1200/900",
-        "https://picsum.photos/seed/freedom-park-2/1200/900"
+        "images/places/freedom-park.jpg"
       ],
       "description": "A former colonial prison turned public park and events space. Wide lawns, food stalls at weekends and live shows on many nights. Entry is cheap and it is built for slow afternoons.",
       "bestFor": "Family outings, tourist days, event nights.",
@@ -428,9 +670,20 @@
       "area": "Victoria Island",
       "price": 1,
       "score": 7.6,
-      "vibe": ["casual", "quiet"],
-      "occasions": ["work", "chill", "brunch"],
-      "tags": ["coffee chain", "reliable", "long hours"],
+      "vibe": [
+        "casual",
+        "quiet"
+      ],
+      "occasions": [
+        "work",
+        "chill",
+        "brunch"
+      ],
+      "tags": [
+        "coffee chain",
+        "reliable",
+        "long hours"
+      ],
       "featured": false,
       "image": "https://picsum.photos/seed/cafe-neo/1200/900",
       "gallery": [
@@ -466,9 +719,20 @@
       "area": "Lekki Phase 1",
       "price": 1,
       "score": 7.9,
-      "vibe": ["casual", "quiet"],
-      "occasions": ["work", "brunch", "chill"],
-      "tags": ["brunch", "pastries", "good light"],
+      "vibe": [
+        "casual",
+        "quiet"
+      ],
+      "occasions": [
+        "work",
+        "brunch",
+        "chill"
+      ],
+      "tags": [
+        "brunch",
+        "pastries",
+        "good light"
+      ],
       "featured": false,
       "image": "https://picsum.photos/seed/co-cafe/1200/900",
       "gallery": [
@@ -505,14 +769,24 @@
       "area": "Ikeja",
       "price": 1,
       "score": 8.5,
-      "vibe": ["lively", "outdoors"],
-      "occasions": ["party", "night-out", "tourist"],
-      "tags": ["Fela", "live Afrobeat", "open air"],
+      "vibe": [
+        "lively",
+        "outdoors"
+      ],
+      "occasions": [
+        "party",
+        "night-out",
+        "tourist"
+      ],
+      "tags": [
+        "Fela",
+        "live Afrobeat",
+        "open air"
+      ],
       "featured": false,
-      "image": "https://picsum.photos/seed/the-new-afrika-shrine/1200/900",
+      "image": "images/places/the-new-afrika-shrine.jpg",
       "gallery": [
-        "https://picsum.photos/seed/the-new-afrika-shrine-1/1200/900",
-        "https://picsum.photos/seed/the-new-afrika-shrine-2/1200/900"
+        "images/places/the-new-afrika-shrine.jpg"
       ],
       "description": "The home of the late Fela Anikulapo Kuti, run by his family and still hosting live bands most weekends. Expect smoke, loud sound and dancing until late. An experience more than a venue.",
       "bestFor": "Live music, party nights, cultural immersion.",
@@ -545,15 +819,25 @@
       "area": "Ebute Metta",
       "price": 1,
       "score": 8.8,
-      "vibe": ["quiet", "casual", "instagrammable"],
-      "occasions": ["tourist", "chill", "date-night"],
-      "tags": ["railway house", "museum", "garden café"],
+      "vibe": [
+        "quiet",
+        "casual",
+        "instagrammable"
+      ],
+      "occasions": [
+        "tourist",
+        "chill",
+        "date-night"
+      ],
+      "tags": [
+        "railway house",
+        "museum",
+        "garden café"
+      ],
       "featured": true,
-      "image": "https://picsum.photos/seed/jaekel-house/1200/900",
+      "image": "images/places/jaekel-house.jpg",
       "gallery": [
-        "https://picsum.photos/seed/jaekel-house-1/1200/900",
-        "https://picsum.photos/seed/jaekel-house-2/1200/900",
-        "https://picsum.photos/seed/jaekel-house-3/1200/900"
+        "images/places/jaekel-house.jpg"
       ],
       "description": "A restored 1898 railway bungalow in Ebute Metta, now a heritage house with a museum, a bookshop and a quiet garden café. A Mainland gem that tourists rarely find. Bring an afternoon.",
       "bestFor": "Quiet afternoons, heritage visits, coffee in the garden.",
@@ -585,9 +869,20 @@
       "area": "Ikoyi",
       "price": 4,
       "score": 8.4,
-      "vibe": ["quiet", "luxury"],
-      "occasions": ["date-night", "work", "family"],
-      "tags": ["boutique hotel", "grill room", "poolside bar"],
+      "vibe": [
+        "quiet",
+        "luxury"
+      ],
+      "occasions": [
+        "date-night",
+        "work",
+        "family"
+      ],
+      "tags": [
+        "boutique hotel",
+        "grill room",
+        "poolside bar"
+      ],
       "featured": false,
       "image": "https://picsum.photos/seed/the-wheatbaker/1200/900",
       "gallery": [
@@ -622,15 +917,27 @@
       "category": "beach",
       "area": "Lekki-Epe",
       "price": 3,
-      "score": 8.0,
-      "vibe": ["outdoors", "casual", "lively"],
-      "occasions": ["beach-day", "family", "birthday", "party"],
-      "tags": ["beach resort", "cottages", "seafood"],
+      "score": 8,
+      "vibe": [
+        "outdoors",
+        "casual",
+        "lively"
+      ],
+      "occasions": [
+        "beach-day",
+        "family",
+        "birthday",
+        "party"
+      ],
+      "tags": [
+        "beach resort",
+        "cottages",
+        "seafood"
+      ],
       "featured": false,
-      "image": "https://picsum.photos/seed/la-campagne-tropicana/1200/900",
+      "image": "images/places/la-campagne-tropicana.jpg",
       "gallery": [
-        "https://picsum.photos/seed/la-campagne-tropicana-1/1200/900",
-        "https://picsum.photos/seed/la-campagne-tropicana-2/1200/900"
+        "images/places/la-campagne-tropicana.jpg"
       ],
       "description": "A beach resort on the Lekki-Epe corridor with cottages, a pool and seafood straight from the lagoon. A weekend away that is still reachable from the Island. Book a room, do not just do the day pass.",
       "bestFor": "Weekend trips, family outings, beach days.",
