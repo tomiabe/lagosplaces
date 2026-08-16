@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "note": "Seed dataset for the first build. Every detail is a first pass and must be rechecked with each venue before launch. Images are placeholders, swap them for the real Instagram photos."
+    "note": "Seed dataset for the first build. Every detail is a first pass and must be rechecked with each venue before launch. Photos live in images/places/<venue>/ folders, downloaded from each venue own site or Wikimedia Commons."
   },
   "config": {
     "areas": [
@@ -277,9 +277,9 @@
         "book ahead"
       ],
       "featured": true,
-      "image": "images/places/circa-lagos.jpg",
+      "image": "images/places/circa-lagos/hero.jpg",
       "gallery": [
-        "images/places/circa-lagos.jpg"
+        "images/places/circa-lagos/hero.jpg"
       ],
       "description": "A calm bistro set back from the Lekki main road, with a plant-lined courtyard and a short menu that changes with the seasons. The lighting does the work for you, and the room fills with people who booked ahead.",
       "bestFor": "Brunch with friends, low-key dates, weekday dinners.",
@@ -329,11 +329,11 @@
         "loud room"
       ],
       "featured": false,
-      "image": "images/places/rsvp-restaurant.jpg",
+      "image": "images/places/rsvp-restaurant/hero.jpg",
       "gallery": [
-        "images/places/rsvp-restaurant.jpg",
-        "images/places/rsvp-interior-1.jpg",
-        "images/places/rsvp-interior-2.jpg"
+        "images/places/rsvp-restaurant/hero.jpg",
+        "images/places/rsvp-restaurant/interior-1.jpg",
+        "images/places/rsvp-restaurant/interior-2.jpg"
       ],
       "description": "A long-standing Lekki spot with a buzzy dining room and a menu that runs Nigerian classics through to continental dishes. Portions are generous and the bar does the job. The energy builds as the evening goes on.",
       "bestFor": "Dinner with a group, birthday dinners, Friday nights out.",
@@ -433,9 +433,9 @@
         "outdoor section"
       ],
       "featured": false,
-      "image": "images/places/the-house-lagos.jpg",
+      "image": "images/places/the-house-lagos/hero.jpg",
       "gallery": [
-        "images/places/the-house-lagos.jpg"
+        "images/places/the-house-lagos/hero.jpg"
       ],
       "description": "A multi-room restaurant and bar on the Ikeja GRA end of Allen Avenue. Eat proper Nigerian food indoors, then move outside when the music picks up. It runs late and it handles big tables well.",
       "bestFor": "Dinner and drinks, birthday parties, groups.",
@@ -485,9 +485,9 @@
         "courtyard"
       ],
       "featured": true,
-      "image": "images/places/nok-by-alara.jpg",
+      "image": "images/places/nok-by-alara/hero.jpg",
       "gallery": [
-        "images/places/nok-by-alara.jpg"
+        "images/places/nok-by-alara/hero.jpg"
       ],
       "description": "A contemporary African gallery with a courtyard restaurant attached. You get a real taste of the art scene before you even order. The menu is seasonal, West African-led and worth slowing down for.",
       "bestFor": "Date nights with culture, brunch with a slow pace.",
@@ -534,9 +534,9 @@
         "Nigerian food"
       ],
       "featured": false,
-      "image": "images/places/terra-kulture.jpg",
+      "image": "images/places/terra-kulture/hero.jpg",
       "gallery": [
-        "images/places/terra-kulture.jpg"
+        "images/places/terra-kulture/hero.jpg"
       ],
       "description": "Half cultural centre, half restaurant. Plays, art, books and Nigerian food under one roof, and one of the few places where you can watch a show and eat well the same evening.",
       "bestFor": "Culture nights, family outings, tourist days.",
@@ -636,9 +636,9 @@
         "food stalls"
       ],
       "featured": false,
-      "image": "images/places/freedom-park.jpg",
+      "image": "images/places/freedom-park/hero.jpg",
       "gallery": [
-        "images/places/freedom-park.jpg"
+        "images/places/freedom-park/hero.jpg"
       ],
       "description": "A former colonial prison turned public park and events space. Wide lawns, food stalls at weekends and live shows on many nights. Entry is cheap and it is built for slow afternoons.",
       "bestFor": "Family outings, tourist days, event nights.",
@@ -784,9 +784,9 @@
         "open air"
       ],
       "featured": false,
-      "image": "images/places/the-new-afrika-shrine.jpg",
+      "image": "images/places/the-new-afrika-shrine/hero.jpg",
       "gallery": [
-        "images/places/the-new-afrika-shrine.jpg"
+        "images/places/the-new-afrika-shrine/hero.jpg"
       ],
       "description": "The home of the late Fela Anikulapo Kuti, run by his family and still hosting live bands most weekends. Expect smoke, loud sound and dancing until late. An experience more than a venue.",
       "bestFor": "Live music, party nights, cultural immersion.",
@@ -835,9 +835,9 @@
         "garden café"
       ],
       "featured": true,
-      "image": "images/places/jaekel-house.jpg",
+      "image": "images/places/jaekel-house/hero.jpg",
       "gallery": [
-        "images/places/jaekel-house.jpg"
+        "images/places/jaekel-house/hero.jpg"
       ],
       "description": "A restored 1898 railway bungalow in Ebute Metta, now a heritage house with a museum, a bookshop and a quiet garden café. A Mainland gem that tourists rarely find. Bring an afternoon.",
       "bestFor": "Quiet afternoons, heritage visits, coffee in the garden.",
@@ -935,9 +935,9 @@
         "seafood"
       ],
       "featured": false,
-      "image": "images/places/la-campagne-tropicana.jpg",
+      "image": "images/places/la-campagne-tropicana/hero.jpg",
       "gallery": [
-        "images/places/la-campagne-tropicana.jpg"
+        "images/places/la-campagne-tropicana/hero.jpg"
       ],
       "description": "A beach resort on the Lekki-Epe corridor with cottages, a pool and seafood straight from the lagoon. A weekend away that is still reachable from the Island. Book a room, do not just do the day pass.",
       "bestFor": "Weekend trips, family outings, beach days.",
@@ -959,6 +959,58 @@
       "crowd": "Families, couples, groups",
       "hours": {
         "Daily": "Gate 8am-10pm, check-in anytime"
+      }
+    },
+    {
+      "id": "see-lagos",
+      "name": "SEE Lagos",
+      "category": "restaurant",
+      "area": "Lekki Phase 1",
+      "price": 2,
+      "score": 8.6,
+      "vibe": [
+        "casual",
+        "outdoors",
+        "instagrammable"
+      ],
+      "occasions": [
+        "brunch",
+        "date-night",
+        "work",
+        "family"
+      ],
+      "tags": [
+        "art gallery",
+        "plant shop",
+        "outdoor garden",
+        "private dining",
+        "cafe"
+      ],
+      "featured": false,
+      "image": "images/places/see-lagos/hero.jpg",
+      "gallery": [
+        "images/places/see-lagos/hero.jpg"
+      ],
+      "description": "A lifestyle space in Lekki that runs a French-style restaurant, a cafe, an art gallery and a plant-filled garden under one roof. The greenery spills outdoors, the lounge has a bar and a book library, and private dining spaces take care of birthdays and business dinners.",
+      "bestFor": "Slow brunches, dates and afternoons in the garden.",
+      "goWhen": "Weekday mornings for the cafe, early evenings before the garden fills up.",
+      "skipIf": "You want a quick grab-and-go meal without lingering.",
+      "spend": "₦15k-₦35k a head",
+      "dates": "Excellent",
+      "birthdays": "Good",
+      "groups": "Good",
+      "noise": "Moderate",
+      "parking": "Good",
+      "dressCode": "Smart casual",
+      "security": "Good",
+      "reservation": "Recommended on weekends",
+      "bestTime": "Late afternoons",
+      "setting": "Indoor, garden and lounge",
+      "wifi": "Free",
+      "music": "Soft afrobeats and lounge",
+      "crowd": "Mixed, creatives and professionals",
+      "hours": {
+        "Mon-Sun": "8am-2am"
       }
     }
   ]

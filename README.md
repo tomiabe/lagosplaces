@@ -12,8 +12,9 @@ Open http://localhost:8000.
 
 ## Image sources
 
-Photos in `images/places/` are downloaded from each venue's own site (brand
-photography) or Wikimedia Commons, then resized to max 1600px wide.
+Photos in `images/places/<venue>/` are downloaded from each venue's own site
+(brand photography), Wikimedia Commons, or the venue's Google Business profile,
+then resized to max 1600px wide. Each venue has a folder in the photo library.
 
 | Place | Source |
 | --- | --- |
@@ -26,6 +27,7 @@ photography) or Wikimedia Commons, then resized to max 1600px wide.
 | the-new-afrika-shrine | Wikimedia Commons (New Afrika Shrine) |
 | jaekel-house | Wikimedia Commons (Jaekel House, Lagos) |
 | la-campagne-tropicana | Wikimedia Commons (La Campagne Tropicana Beach Resort) |
+| see-lagos | Google Business profile photo |
 
 Art Cafe, Bogobiri, Cafe Neo, CO Cafe and The Wheatbaker still use placeholder
 images because no reusable venue photos are available on their public sites.

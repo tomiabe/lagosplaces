@@ -203,7 +203,36 @@
     return '<div class="card-grid">' + list.map(placeCardHtml).join('') + '</div>';
   }
 
+  function heroCovers() {
+    return data.places.filter(function (p) { return p.image && p.image.indexOf('picsum') === -1; });
+  }
+
+  function pickHeroCover() {
+    var covers = heroCovers();
+    if (!covers.length) return null;
+    var last = null;
+    try { last = sessionStorage.getItem('lp_hero_cover'); } catch (e) {}
+    if (last === null) {
+      var defaultCover = covers.filter(function (c) { return c.id === 'see-lagos'; })[0];
+      if (defaultCover) {
+        try { sessionStorage.setItem('lp_hero_cover', defaultCover.id); } catch (e) {}
+        return defaultCover;
+      }
+    }
+    var idx = Math.floor(Math.random() * covers.length);
+    if (last !== null && covers.length > 1 && covers[idx].id === last) {
+      idx = (idx + 1) % covers.length;
+    }
+    try { sessionStorage.setItem('lp_hero_cover', covers[idx].id); } catch (e) {}
+    return covers[idx];
+  }
+
   function renderHome() {
+    var cover = pickHeroCover();
+    var heroBg = cover ?
+      ' style="background-image:linear-gradient(rgba(45,42,50,0.58),rgba(45,42,50,0.58)),url(\'' + esc(cover.image) + '\')"' : '';
+    var coverCredit = cover ?
+      '<p class="hero__credit">' + icon('camera') + '<span>' + esc(cover.name) + ' · ' + esc(cover.area) + '</span></p>' : '';
     var featured = data.places.filter(function (p) { return p.featured; }).sort(function (a, b) { return b.score - a.score; });
 
     var moods = [
@@ -251,7 +280,7 @@
     }).join('');
 
     $('#main').innerHTML =
-      '<section class="hero">' +
+      '<section class="hero' + (cover ? ' hero--cover' : '') + '"' + heroBg + '>' +
         '<div class="container hero__inner">' +
           '<h1 class="hero__title">Know where to <span class="hl">go.</span></h1>' +
           '<p class="hero__lead">Restaurants, bars, coffee spots and more across Lagos, picked by hand and checked against the things that matter here: price, noise, parking, security, dress code.</p>' +
@@ -264,6 +293,7 @@
           '<div class="hero__chips">' + heroChips + '</div>' +
           '<p class="hero__trust">' + icon('checkmark-badge-01') + ' Paid visibility never buys a score.</p>' +
         '</div>' +
+        coverCredit +
       '</section>' +
 
       '<section class="section">' +
