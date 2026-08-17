@@ -437,7 +437,7 @@ main:focus {
 .hero .search__box input:focus {
   border-color: transparent;
   outline: 3px solid var(--yellow);
-  outline-offset: 2px;
+  outline-offset: 0;
 }
 
 .hero {
@@ -498,7 +498,7 @@ main:focus {
   font-weight: 800;
   color: var(--paper);
   margin: 0;
-  max-width: 14ch;
+  max-width: 24ch;
 }
 
 .hero__title .hl {
